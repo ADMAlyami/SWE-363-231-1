@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .cell {
+            font-family: sans-serif;
+            font-size: larger;
+            font-weight: bolder;
+            background-color: beige;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cell:hover{
+            background-color: blanchedalmond;
+        }
+
+        .row {
+            display: flex;
+        }
+        .reset{
+          margin-top: 30px;
+          background: #5E5DF0;
+          border-radius: 999px;
+          box-shadow: #5E5DF0 0 10px 20px -10px;
+          box-sizing: border-box;
+          color: #FFFFFF;
+          cursor: pointer;
+          font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 24px;
+          opacity: 1;
+          outline: 0 solid transparent;
+         padding: 8px 18px;
+         user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: fit-content;
+        word-break: break-word;
+        border: 0;
+          
+          background-color: crimson;
+        }
+        .reset:disabled {
+          pointer-events: none;
+        }
+
+        .reset:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+          }
+
+        .reset:active {
+          box-shadow: none;
+          transform: translateY(0);
+          }
+
+    </style>
+    
+</head>
+
+<body>
+    <h1 id="turn">
+        Now it's is X turn
+    </h1>
+    <!-- Board -->
+    <div class="board">
+        <div class="row">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+        <div class="row">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+        <div class="row">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+      </div>
+      <div class="button">
+        <button class="reset">Reset</button>
+      </div>
+        <script>
+
+          
+          const reset = document.querySelector(".button");
+          reset.addEventListener("click", resetGame)
+          let turn = 0;
+          let gameEnded = false;
+          
+          // add letter when clicked
+          const board = document.querySelector(".board");
+          board.addEventListener("click", cellClicked);
+          function cellClicked(event){
+            let cell = event.target;
+            
+            if(turn == 0 && cell.innerText == "" && !gameEnded)
+            {
+              cell.innerText = "X";
+              turn = 1;
+            }
+            else if(turn == 1 && cell.innerText == "" && !gameEnded)
+            {
+              cell.innerText = "O";
+              turn = 0;
+            }
+
+          }
+          
+
+
+          
+
+          // allow reset
+          function resetGame(){
+          let cells = document.querySelectorAll(".cell");
+          for(let i = 0; i < cells.length; i++){
+            cells[i].innerText = "";
+          }
+}
+
+            
+
+            
+
+        </script>
+    
+</body>
+
+</html>
