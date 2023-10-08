@@ -1,10 +1,39 @@
-html{
-  width: 1440px;
-  height: 2504px;
-}
+
 body{
   font-family: sans-serif, Arial, Helvetica;
 }
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;  /* covers the full viewport height */
+}
+
+.mainContent {
+  flex: 1; /* allows this content to grow and consume available space */
+}
+
+footer {
+  width: 100%;
+  text-align: center;  /* to center the content inside the footer */
+  padding: 20px 0; /* adjust as needed */
+  background: #333;  /* adjust as per your design */
+  color: #fff;  /* adjust as per your design */
+}
+
+.hidden {
+  display: none;
+}
+
+#helpPopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
 
 .loader {
   border: 16px solid #f3f3f3;
@@ -45,10 +74,11 @@ body{
 
 
 
-/* Base styles */
+
 .navbar {
   position: relative;
-  width: 200px;
+  display: flex;
+  flex-direction: row;
 }
 
 .hamburger {
@@ -60,22 +90,14 @@ body{
   list-style-type: none;
   padding: 0;
   margin: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease-in-out;
+  
 }
 
 .navbar li {
   padding: 10px;
-  opacity: 0;
-  transition: opacity 0.5s; 
+  margin: 0;
 }
-
-
-.navbar:hover ul {
-  max-height: 500px; /* Adjust based on the maximum height needed */
-}
-
+/*
 .navbar:hover li:nth-child(1) {
   transition-delay: 0.1s;
   opacity: 1;
@@ -96,7 +118,17 @@ body{
   opacity: 1;
 }
 
+.navbar:hover li:nth-child(5) {
+  transition-delay: 0.5s;
+  opacity: 1;
+}
 
+.navbar:hover li:nth-child(6) {
+  transition-delay: 0.5s;
+  opacity: 1;
+}
+
+*/
 
 a{
   color: #ff4b01;
