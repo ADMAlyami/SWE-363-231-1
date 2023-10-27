@@ -1,83 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+<html>
+  <head>
+    <title>Ali Alyami blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ali Alyami Blog</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
     <link rel="stylesheet" href="desktop.css">
     <link rel="stylesheet" href="style.css" media="(max-width: 768px)">
-</head>
 
-<body class="site-content">
-    <!-- Bootstrap Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Ali Alyami Blog</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <
-            </ul>
-        </div>
-    </nav>
+    
+    <script src="script.js"></script>
 
-    <div class="container">
+  </head>
+  <div class="mainContent">
+  <div id="helpPopup" class="hidden">
+    <p>Use the Tab key to navigate and Enter to select.</p>
+    <button onclick="closePopup()">Close</button>
+  </div>
+
+  <body class="site-content">
+    <div class="loader"></div>
+    <div class="navbar">
+      <div class="hamburger">&#9776;</div> <!-- Hamburger icon using Unicode character -->
+      
+  </div>
+
+    <h1 class="selfInfo">Welcome to Ali Alyami Personal Blog</h1>
+  
+    <main>
+        <section>
+          <img src="IMG_0641 copy.jpeg" alt=" picture of me and my dad" >
+        </section>
         
-        <div class="row">
-            <div class="col-md-6">
-                <h1 class="selfInfo">Welcome to Ali Alyami Personal Blog</h1>
-                <main>
-                    <section>
-                        <img src="IMG_0641 copy.jpeg" alt="A picture of me and my dad" class="img-fluid">
-                    </section>
-                    <section>
-                        <h2 class="selfIntro">Here you will find my ideas, projects, information about me, and useful
-                            articles.</h2>
-                    </section>
-                </main>
-            </div>
-            <div class="col-md-6">
-                <div class="passionText">
-                    <h3>My Passions</h3>
-                </div>
-                <div class="additionalPassionCards">
-                    <div class="card">
-                        <div class="card-body">
-                            <p class="card-text uxText">UX Designer</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <p class="card-text aiText">AI Developer</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <p class="card-text webText">Web Developer</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <section>
+          <p>
+            <h2 class="selfIntro">Here you will see many of my ideas, projects, relative information about me and some useful articles.</h2>
+          </p>
+        </section>
+    </main>
+
+
+    <div class="passionText"><h3>My Passions</h3></div>
+    <div class="additionalPassionCards">
+        
+        <div class="Ux"> 
+          <p class="uxText">UX Designer</p>
+
+        </div>
+        <div class="AI">
+          <p class="aiText">AI Developer</p>
+        </div>
+        <div class="WebDevelopment">
+          <p class="webText">Web Developer</p>
         </div>
     </div>
 
-    <footer class="text-center py-3">
-        <p>Contact Info: alidashen1@gmail.com, +966554949970</p>
-        <p>Copyright © 2023 Ali Alyami</p>
-    </footer>
-
-
-</body>
-
+   <footer >
+    <p>Contact Info: alidashen1@gmail.com, +966554949970</p>
+    <p>Copyright © 2023 ALi Alyami</p>
+  </footer>
+  
+  </body>
 </html>

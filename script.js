@@ -7,7 +7,9 @@ document.addEventListener("DOMContentLoaded", function() {
       { text: "Details", href: "detailsPage.html" },
       { text: "Contact Us", href: "contactUs.html" },
       { text: "Submit a job offer", href: "hireMe.html" },
-      { text: "Play a Game", href: "game.html" }
+      { text: "Play a Game", href: "game.html" },
+      //Javascript 3 exercise 1
+      { text: "ApiDog", href: "dogImages.html" }
   ];
 
   navItems.forEach(item => {
