@@ -1,34 +1,19 @@
 document.addEventListener("DOMContentLoaded", function() {
-  // Exercise 1: Creating a class for navItems
-  class NavItem {
-      constructor(text, href) {
-          this.text = text;
-          this.href = href;
-      }
-
-      createElement() {
-          const li = document.createElement('li');
-          const a = document.createElement('a');
-          a.href = this.href;
-          a.innerText = this.text;
-          li.appendChild(a);
-          return li;
-      }
+  // Initialize Vue instance for the navbar
+    new Vue({
+      el: '#vueNavbar',
+      data: {
+      navItems: [
+          { text: "Arabic Version", href: "arabicVersion.html" },
+          { text: "Details", href: "detailsPage.html" },
+          { text: "Contact Us", href: "contactUs.html" },
+          { text: "Submit a job offer", href: "hireMe.html" },
+          { text: "Play a Game", href: "game.html" },
+          { text: "ApiDog", href: "dogImages.html" }
+      ]
   }
+    });
 
-  const navbar = document.querySelector('.navbar');
-  const navItemsData = [
-      new NavItem("Arabic Version", "arabicVersion.html"),
-      new NavItem("Details", "detailsPage.html"),
-      new NavItem("Contact Us", "contactUs.html"),
-      new NavItem("Submit a job offer", "hireMe.html"),
-      new NavItem("Play a Game", "game.html"),
-      new NavItem("ApiDog", "dogImages.html")
-  ];
-
-  // Javascript 5 Exercise 3: Using map
-  const navElements = navItemsData.map(item => item.createElement());
-  navElements.forEach(el => navbar.appendChild(el));
 
   let timeoutId;
 
