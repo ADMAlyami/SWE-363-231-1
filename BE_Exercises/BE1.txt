@@ -1,0 +1,10 @@
+Exercise 1:
+1) https://www.youtube.com/
+The IP address : 
+142.250.203.238:443
+2) There were 51 requests
+3) The types returned : script, xhr, x-icon, stylesheet, text plain, document, png, font, jpeg, media, fetch
+4) The largest file returned was 355kb, and it was content.js
+5) it took 28ms
+
+
