@@ -43,6 +43,14 @@ router.get('/dog', (req, res) => {
   res.sendFile(__dirname + '/dogImages.html');
 });
 
+router.post('/submit', (req, res) => {
+  const { name, email, categories, experience, proposal } = req.body; // Extract data from form
+  console.log('Form Submission:', name, email); // Log the form data
+
+  // Send a response back to the user
+  res.send('Form submission received!'); // Customize this response as needed
+});
+
 
 // ... router configuration
 export default router;
