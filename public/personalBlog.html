@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ali Alyami blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="desktop.css">
+    <link rel="stylesheet" href="style.css" media="(max-width: 768px)">
+    <!--JavaScript 5 chosen library-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="https://threejs.org/build/three.js"></script>
+    
+
+  </head>
+  <div class="mainContent">
+
+  <div id="helpPopup" class="hidden">
+    <p>Use the Tab key to navigate and Enter to select.</p>
+    <button onclick="closePopup()">Close</button>
+  </div>
+
+  <body class="site-content">
+    <div id="screensaver" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 9999;"></div>
+    <div class="loader"></div>
+    <!--Modification for Javascript5-->
+    <div id="vueNavbar" class="navbar">
+      <ul>
+          <li v-for="item in navItems"><a :href="item.href">{{ item.text }}</a></li>
+      </ul>
+  </div>
+  
+  
+
+    <h1 class="selfInfo">Welcome to Ali Alyami Personal Blog</h1>
+  
+    <main>
+        <section>
+          <img src="IMG_0641 copy.jpeg" alt=" picture of me and my dad" >
+        </section>
+        
+        <section>
+          <p>
+            <h2 class="selfIntro">Here you will see many of my ideas, projects, relative information about me and some useful articles.</h2>
+          </p>
+        </section>
+    </main>
+
+
+    <div class="passionText"><h3>My Passions</h3></div>
+    <div class="additionalPassionCards">
+        
+        <div class="Ux"> 
+          <p class="uxText">UX Designer</p>
+
+        </div>
+        <div class="AI">
+          <p class="aiText">AI Developer</p>
+        </div>
+        <div class="WebDevelopment">
+          <p class="webText">Web Developer</p>
+        </div>
+    </div>
+
+   <footer >
+    <p>Contact Info: alidashen1@gmail.com, +966554949970</p>
+    <p>Copyright © 2023 ALi Alyami</p>
+  </footer>
+  
+
+  <script src="script.js" defer></script>
+  </body>
+</html>

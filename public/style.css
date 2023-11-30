@@ -1,0 +1,155 @@
+
+main{
+  margin-left: 25%;
+}
+
+img{
+  width: 261.475px;
+height: 260px;
+flex-shrink: 0;
+}
+.hidden {
+  display: none;
+}
+.selfInfo{
+  margin-left: 25%;
+  color: #172774;
+font-family: Poppins;
+font-size: 30px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.15px;
+}
+
+.passionText{
+  margin-left: 25%;
+  display: flex;
+  width: 280px;
+  height: 53px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+
+  color: #14279B;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.375px;
+}
+
+
+
+  
+  
+.navbar {
+  
+  display: flex;
+  flex-direction: row;
+}
+
+.hamburger {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.navbar ul {
+  
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  
+}
+
+.navbar li {
+  
+  padding: 10px;
+  margin: 0;
+}
+.selfIntro{
+  width: 374px;
+height: 122px;
+flex-shrink: 0;
+color: #172774;
+font-family: Poppins;
+font-size: 25px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.125px;
+justify-content: center;
+left: 50px;
+}
+
+.additionalPassionCards{
+  margin-left: 25%;
+  width: 347px;
+  height: 280px;
+  flex-shrink: 0;
+  border-radius: 13px;
+  background: #FFF;
+  box-shadow: 0px 5px 26px 5px rgba(0, 0, 0, 0.17);
+}
+.additionalPassionCards p{
+  display: flex;
+width: 299px;
+height: 28px;
+flex-direction: column;
+padding: 20px 20px 20px 20px;
+flex-shrink: 0;
+color: #000;
+font-family: Poppins;
+font-size: 25px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 1.375px;
+text-align: center
+;
+}
+.Ux{
+  position: relative; /* relative positioning for the card container */
+  width: 347px;
+  height: 266px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0px 6px 30px 1px rgba(0, 0, 0, 0.25);
+}
+.AI{
+  position: relative; /* relative positioning for the card container */
+  width: 347px;
+  height: 266px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0px 6px 30px 1px rgba(0, 0, 0, 0.25); 
+}
+.WebDevelopment{
+  position: relative; /* relative positioning for the card container */
+  width: 347px;
+  height: 266px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0px 6px 30px 1px rgba(0, 0, 0, 0.25);   
+}
+
+footer {
+  
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 60px;
+    text-align: center;  /* to center the content inside the footer */
+    padding: 20px 0; 
+    background: #333;  
+    color: #fff;  
+  
+
+
+}
